@@ -1,3 +1,9 @@
+## [1.0.0-dev.3](https://github.com/hxreborn/morphe-patches-template/compare/v1.0.0-dev.2...v1.0.0-dev.3) (2026-11-25)
+
+### 🐛 Bug Fixes
+
+* trigger a release with the fixed order ([3b92f66](https://github.com/hxreborn/morphe-patches-template/commit/3b92f666fb69c0c66500eb42469b912286e5f66b))
+
 ## [1.0.0-dev.2](https://github.com/hxreborn/morphe-patches-template/compare/v1.0.0-dev.1...v1.0.0-dev.2) (2026-11-25)
 
 ### 🐛 Bug Fixes

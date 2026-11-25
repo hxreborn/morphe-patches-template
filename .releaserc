@@ -58,12 +58,17 @@
         "assets": [
           "CHANGELOG.md",
           "gradle.properties",
-          "patches-bundle.json",
           "patches-list.json",
           "README.md",
           "PATCHES.md"
         ],
         "message": "chore: Release v${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
+      }
+    ],
+    [
+      "@semantic-release/exec",
+      {
+        "publishCmd": "exit 1"
       }
     ],
     [
@@ -75,6 +80,14 @@
           }
         ],
         "successComment": false
+      }
+    ],
+    [
+      "@semantic-release/exec",
+      {
+        "successCmd": "git add patches-bundle.json \
+          && git commit -m \"chore: Publish v${nextRelease.version} in patches-bundle.json [skip ci]\" \
+          && git push origin HEAD:${branch.name}"
       }
     ],
     [
